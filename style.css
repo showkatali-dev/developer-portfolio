@@ -1,5 +1,6 @@
 html {
     font-size: calc(12px + 5 * ((100vw - 400px) / 1000));
+    scroll-behavior: smooth;
 }
 
 * {
