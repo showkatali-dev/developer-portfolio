@@ -175,19 +175,23 @@ td {
     margin-top: 1rem;
 }
 
-.skill-sub-container {
-    display: flex;
-    gap: 1rem;
-}
+
 
 .skill-container .skill-box {
     text-align: left;
     box-shadow: 2px 0px 20px rgba(9, 9, 9, 0.1);
     padding: 1rem;
+    width: 48%;
 }
 
 .skill-container .skill-box * {
     margin-bottom: 1rem;
+}
+
+.skill-sub-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .skill-box p {
@@ -321,12 +325,14 @@ footer {
 
     .skill-container {
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
 
+
+
     .skill-container .skill-box {
-        width: 100%;
+        width: 48%;
     }
 
 
