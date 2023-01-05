@@ -315,6 +315,10 @@ footer {
         margin: auto;
     }
 
+    .skill-container .skill-box {
+        width: 100%;
+    }
+
 
 
     #navbar {
