@@ -9,6 +9,7 @@ html {
     font-family: sans-serif;
 }
 
+
 /* Home Section start */
 .home {
     height: calc(450px + 200 * ((100vw - 400px) / 1000));
@@ -18,6 +19,7 @@ html {
     background-position: bottom right, left;
     background-size: 50%, contain;
     background-color: #FFF8F3;
+    position: relative;
     overflow: hidden;
 }
 
@@ -274,6 +276,17 @@ footer {
     text-align: center;
 }
 
+.toggler {
+    display: none;
+    z-index: 999;
+}
+
+
+
+#navbar.active li a {
+    color: #fff;
+}
+
 @media only screen and (max-width: 760px) {
 
     .about {
@@ -299,6 +312,54 @@ footer {
         flex-direction: column;
         width: 80%;
         margin: auto;
+    }
+
+
+
+    #navbar {
+        flex-direction: column;
+        position: absolute;
+        right: -200px;
+        top: 2.5rem;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+        width: 10rem;
+        height: 19rem;
+        gap: 2px;
+        transition: 0.5s;
+    }
+
+    #navbar li {
+        padding: 0.8rem 1rem;
+    }
+
+    #navbar li a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: #fff;
+    }
+
+    #navbar li:hover {
+        background-color: #474747;
+
+    }
+
+    #navbar li:last-child:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .toggler {
+        display: block;
+        font-size: 1.4rem;
+    }
+
+    .toggler:hover {
+        cursor: pointer;
+    }
+
+    #navbar.active {
+        right: -4px;
     }
 
 }
