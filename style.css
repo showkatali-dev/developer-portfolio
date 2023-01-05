@@ -175,11 +175,15 @@ td {
     margin-top: 1rem;
 }
 
+.skill-sub-container {
+    display: flex;
+    gap: 1rem;
+}
+
 .skill-container .skill-box {
     text-align: left;
     box-shadow: 2px 0px 20px rgba(9, 9, 9, 0.1);
     padding: 1rem;
-    width: 24%;
 }
 
 .skill-container .skill-box * {
@@ -373,4 +377,11 @@ footer {
         right: -4px;
     }
 
+    .container3 {
+        flex-direction: column;
+    }
+
+    .message {
+        width: 100%;
+    }
 }
