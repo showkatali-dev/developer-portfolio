@@ -11,7 +11,7 @@ html {
 
 /* Home Section start */
 .home {
-    height: calc(400px + 250 * ((100vw - 400px) / 1000));
+    height: calc(450px + 200 * ((100vw - 400px) / 1000));
     width: 100vw;
     background-image: url(images/header_bg.png), url(images/developer.png);
     background-repeat: no-repeat, no-repeat;
