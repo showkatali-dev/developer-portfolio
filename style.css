@@ -1,0 +1,304 @@
+html {
+    font-size: calc(12px + 5 * ((100vw - 400px) / 1000));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Home Section start */
+.home {
+    height: calc(400px + 250 * ((100vw - 400px) / 1000));
+    width: 100vw;
+    background-image: url(images/header_bg.png), url(images/developer.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, left;
+    background-size: 50%, contain;
+    background-color: #FFF8F3;
+    overflow: hidden;
+}
+
+/* Nav Section  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+.h-ico {
+    font-size: 2rem;
+    font-weight: 900;
+    position: relative;
+    top: -6px;
+}
+
+.h-ico:hover {
+    cursor: pointer;
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: #757575;
+}
+
+.bg-primary {
+    display: inline-block;
+    background-color: #FD6E0A;
+    color: white;
+    font-weight: 550;
+    padding: 12px 12px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.bg-secondary {
+    display: inline-block;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+    font-weight: 550;
+    padding: 12px 12px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    margin-top: 10%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 60%;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+}
+
+.left h2 {
+    font-size: 1.8rem;
+    color: #474747;
+}
+
+.right {
+    height: 100%;
+    margin-left: 10%;
+    padding-top: 0.5rem;
+}
+
+.right img {
+    height: 100%;
+}
+
+/* About Section Start  */
+
+.about {
+    width: 75vw;
+    margin: 5rem auto;
+    text-align: center;
+    background-color: #FFF8F3;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about table {
+    width: 100%;
+}
+
+.about table th,
+td {
+    text-align: center;
+    padding: 2px;
+}
+
+.about table th {
+    color: #757575;
+    font-weight: normal;
+}
+
+.about table td {
+    font-weight: bold;
+    color: #474747;
+}
+
+/* Skills Section  */
+.skills {
+    width: 75vw;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.skill-container {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-container .skill-box {
+    text-align: left;
+    box-shadow: 2px 0px 20px rgba(9, 9, 9, 0.1);
+    padding: 1rem;
+}
+
+.skill-container .skill-box * {
+    margin-bottom: 1rem;
+}
+
+.skill-box p {
+    font-size: 0.9rem;
+}
+
+
+/* Resume Section  */
+.resume {
+    width: 75vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container2 {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    text-align: left;
+}
+
+.resume-box {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin-top: 0.6rem;
+}
+
+.resume-box:last-child {
+    border-bottom: 0;
+}
+
+.resume-box * {
+    margin-bottom: 0.8rem;
+}
+
+.resume-box p {
+    font-size: 0.8rem;
+}
+
+.resume-box h4 {
+    color: #747474;
+}
+
+.container2 h2,
+h3 {
+    color: #474747;
+}
+
+/* Contact Section  */
+.contact {
+    width: 100vw;
+    background-color: #FFF8F3;
+    padding: 5rem 0;
+    margin-top: 4rem;
+}
+
+.container3 {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.connect * {
+    margin-bottom: 1rem;
+}
+
+.connect,
+.message {
+    width: 50%;
+}
+
+.message input,
+textarea {
+    display: block;
+    margin: 1rem 0;
+    border: none;
+}
+
+
+
+textarea,
+#name,
+#email {
+    width: 100%;
+    padding: 1rem;
+    resize: none;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #FFF8F3;
+    text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+
+    .about {
+        width: 100vw;
+    }
+
+    table {
+        display: flex;
+        justify-content: center;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    th,
+    td {
+        text-align: left;
+    }
+
+    .skill-container {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+}
