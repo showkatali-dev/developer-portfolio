@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
 html {
     font-size: calc(12px + 5 * ((100vw - 400px) / 1000));
     scroll-behavior: smooth;
@@ -7,7 +9,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -34,7 +36,7 @@ nav {
 }
 
 .h-ico {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 900;
     position: relative;
     top: -6px;
