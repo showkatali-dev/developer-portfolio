@@ -261,7 +261,9 @@ textarea {
     border: none;
 }
 
-
+input:focus {
+    border: 1px solid #FD6E0A;
+}
 
 textarea,
 #name,
