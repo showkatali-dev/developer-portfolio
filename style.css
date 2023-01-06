@@ -33,7 +33,7 @@ nav {
     width: 80%;
     margin: 0 auto;
     padding-top: 3%;
-    transition: 0.2s;
+    transition: 0.6s ease-in;
 }
 
 
@@ -42,7 +42,7 @@ nav {
     font-size: 2.2rem;
     font-weight: 900;
     position: relative;
-    top: -6px;
+    top: -0.8rem;
 }
 
 .h-ico:hover {
@@ -354,14 +354,14 @@ footer {
     top: 0px;
     left: 0px;
     right: 0px;
-    background-color: rgba(221, 208, 194, 0.9);
+    background-color: rgba(221, 208, 194, 1);
     width: 100%;
     padding: 2% 5% 0 6%;
     z-index: 9;
 }
 
 .container-fix {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 @media only screen and (max-width: 760px) {
