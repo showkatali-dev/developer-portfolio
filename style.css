@@ -182,11 +182,49 @@ td {
     box-shadow: 2px 0px 20px rgba(9, 9, 9, 0.1);
     padding: 1rem;
     width: 48%;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-box::before {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: 0px;
+    height: 0.5rem;
+    background-color: #FD6E0A;
+    width: 0%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: width 0.5s;
+
+}
+
+.skill-box::after {
+    content: "";
+    position: absolute;
+    top: 2.5rem;
+    right: 0px;
+    height: 0.5rem;
+    background-color: #FD6E0A;
+    width: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.skill-box:hover::before {
+    width: 100%;
+}
+
+.skill-box:hover::after {
+    width: 100%;
 }
 
 .skill-container .skill-box * {
     margin-bottom: 1rem;
 }
+
 
 .skill-sub-container {
     display: flex;
@@ -197,6 +235,8 @@ td {
 .skill-box p {
     font-size: 0.9rem;
 }
+
+
 
 
 /* Resume Section  */
