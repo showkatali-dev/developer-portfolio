@@ -4,6 +4,19 @@ const navbar = document.getElementById('navbar');
 const home = document.getElementById('home');
 
 let toggleMenu = false;
+console.log(window.pageYOffset)
+
+window.onscroll = function () {
+
+    var navContainer = document.getElementById('nav-container');
+    if (window.pageYOffset > 50) {
+        navContainer.classList.add('nav-fixed')
+        document.querySelector('.container').classList.add('container-fix')
+    } else {
+        navContainer.classList.remove('nav-fixed')
+        document.querySelector('.container').classList.remove('container-fix')
+    }
+}
 
 
 toggler.addEventListener('click', () => {
