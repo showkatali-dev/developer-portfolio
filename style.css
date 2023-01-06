@@ -36,20 +36,7 @@ nav {
     transition: 0.2s;
 }
 
-.nav-fixed {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: rgba(152, 147, 142, 0.795);
-    width: 100%;
-    padding: 2% 5% 0 6%;
-    z-index: 9;
-}
 
-.container-fix {
-    margin-top: 6rem;
-}
 
 .h-ico {
     font-size: 2.2rem;
@@ -362,7 +349,20 @@ footer {
     color: #fff;
 }
 
+.nav-fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(221, 208, 194, 0.9);
+    width: 100%;
+    padding: 2% 5% 0 6%;
+    z-index: 9;
+}
 
+.container-fix {
+    margin-top: 6rem;
+}
 
 @media only screen and (max-width: 760px) {
 
