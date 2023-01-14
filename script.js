@@ -22,7 +22,7 @@ window.onscroll = function () {
 toggler.addEventListener('click', () => {
     if (!toggleMenu) {
         navbar.classList.add('active');
-        toggler.innerHTML = 'X'
+        toggler.innerHTML = '<i class="fa-solid fa-x"></i>'
         toggleMenu = true;
     } else {
         toggler.innerHTML = '<i class="fa-solid fa-bars"></i>'
